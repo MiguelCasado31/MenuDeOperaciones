@@ -8,6 +8,7 @@ public class MenuDeOperaciones {
 
 		Scanner scanner = new Scanner(System.in);
 		int eleccion;
+		//Scanner que se usará para todas las operaciones, así como para pedir los números y las palabras que necesitará cada función/operación.
 
 		do {
 			System.out.println("\nBienvenido al menú de operaciones.");
@@ -19,11 +20,10 @@ public class MenuDeOperaciones {
 			System.out.println("5. Nombre y apellido");
 			System.out.println("6. Factorial de un número");
 			System.out.println("7. Mayor de tres números");
-			System.out.println("0. Salir"); // Opción para salir
-
+			System.out.println("0. Salir"); 
 			System.out.print("Introduce tu elección: ");
 			eleccion = scanner.nextInt();
-			scanner.nextLine(); // Consume el resto de la línea
+			scanner.nextLine(); 
 
 			switch (eleccion) {
 			case 1:
@@ -110,17 +110,14 @@ public class MenuDeOperaciones {
 	}
 
 	public static void holaMundoConFuncion() {
-		// Implement the function logic here
 		System.out.println("Hola Mundo");
 	}
 
 	public static int sumaDosNumeros(int a, int b) {
-		// Implement the function logic here
 		return a + b;
 	}
 
 	public static void numeroParImpar(int numero) {
-		// Implement the function logic here
 		if (numero % 2 == 0) {
 			System.out.println("El número es par.");
 		} else {
@@ -129,17 +126,14 @@ public class MenuDeOperaciones {
 	}
 
 	public static int cuadradoDeUnNumero(int numero) {
-		// Implement the function logic here
 		return numero * numero;
 	}
 
 	public static String nombreyApellido(String nombre, String apellido) {
-		// Implement the function logic here
 		return nombre + " " + apellido;
 	}
 
 	public static int factorial(int numero) {
-		// Implement the function logic here
 		if (numero == 0) {
 			return 1;
 		}
